@@ -1,0 +1,287 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, 'Arial, sans-serif';
+}
+
+#appMountPoint {
+    margin: 0; 
+    padding: 0;
+}
+.basicLayout.simplicity {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.nfLogo.signupBasicHeader {
+    margin-left: 3%;
+}
+.nfLogo{
+    display: inline-block;
+    line-height: 90px;
+    text-decoration: none;
+}
+.nfHeader {
+    height: 90px;
+    background: #fff;
+}
+.nfHeader.signupBasicHeader {
+    align-items: center;
+}
+.noBorderHeader {
+    border-bottom: 1px solid #e6e6e6;
+}
+.authLinks.signupBasicHeader {
+    float: right;
+    margin: 0 3%;
+    color: #333;
+    font-size: 19px;
+    font-weight: 700; 
+}
+.authLinks{
+    line-height: 90px;
+}
+.simpleContainer {
+    padding-bottom: 95px;
+}
+.centerContainer {
+    max-width: 978px;
+    padding: 20px 32px 60px;
+    margin: 0 auto 15px;
+
+}
+.regContainer {
+    max-width: 340px;
+    margin: 0 auto;
+    text-align: center;
+}
+.stepLogoContainer {
+    display: inline-block;
+}
+div.basicLayout .stepLogoContainer .stepLogo {
+    margin: 110px 0 40px;
+}
+div.basicLayout .regStepLogo {
+    width: 260px;
+    display: block;
+}
+.regStepLogo {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Devices.png"); 
+    height: 60px;
+    background-size: 260px;
+
+}
+.stepIndicator {
+    font-size: 13px;
+    display: block;
+    text-align: inherit;
+    line-height: 19px;
+}
+.stepTitle {
+    font-weight: 700;
+    font-size: 23px;
+    display: inline-block;
+}
+.regContainer .contextRow {
+    max-width: 300px;
+    display: inline-block;
+}
+.regContainer .contextBody {
+    font-size: 17px;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+}
+.submitBtnContainer {
+    max-width: 340px;
+    text-align: center;
+    margin: 0 auto;
+}
+.simpleContainer .submitBtnContainer {
+    margin-top: 24px;
+}
+button {
+    width: 100%;
+}
+.nf-btn-primary {
+    min-height: 48px;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #e50914;
+}
+.btn-nf {
+    width: 100%;
+    min-width: 110px;
+    border: none;
+}
+.nf-btn:hover {
+    background-color: hsl(0, 100%, 50%);
+}
+.site-footer-wrapper 
+{
+    position: relative;
+    font-size: 1em;
+    color: #a6a6a6;
+    background: #f3f3f3;
+    padding-bottom: 20px;
+}
+.site-footer {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.footer-top {
+    padding: 0;
+    margin: 0 0 30px;
+}
+.footer-top a {
+    color: #a6a6a6;
+}
+ul.structural {
+    margin: 0;
+    padding: 0;
+}
+.footer-links {
+    max-width: 1000px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+ul.structural>li {
+    list-style: none;
+    margin-left: 0;
+}
+ul.structural>li a{
+    color: #a6a6a6;
+}
+.footer-link-item {
+    display: inline-block;
+    width: 24%;
+    margin-bottom: 16px;
+    padding:0;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+
+/* Registration - page */
+.freeTrialMessaging.notification {
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+@media only screen and (min-width: 500px) 
+{
+    .freeTrialMessaging.notification {
+        max-width: 440px;
+    }
+}
+.freeTrialMessaging.notification .content {
+    background-color: #0071eb;
+    padding: 20px 0;
+    border-radius: 2px;
+}
+@media only screen and (min-width: 500px) 
+{
+    .freeTrialMessaging.notification .content {
+        margin: 20px 0 0;
+    }
+}
+
+/* form container */
+.regFormContainer {
+    text-align: left;
+    max-width: 440px;
+    margin: 0 auto;
+}
+.regFormTitle {
+    margin: 10px 0 0;
+    font-size: 19px;
+    color: #333;
+    font-weight: 700;
+}
+.regFormContainer .contextRow {
+    font-size: 19px;
+    color: #333;
+    width: 100%;
+    max-width: 440px;
+}
+
+/* button */
+.ui-grid {
+    box-sizing: border-box;
+}
+.regFormContainer .simpleForm {
+    margin: 10px 0 20px;
+}
+.nfFormSpace {
+    margin-bottom: 10px;
+}
+.nfInput {
+    max-width: 500px;
+    position: relative;
+}
+.nfInput .nfInputPlacement {
+    position: relative;
+}
+.nfInput .nfTextField {
+    height: 48px;
+    padding: 10px 10px 0;
+    width: 100%;
+}
+.nfTextField {
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid #8c8c8c;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    box-sizing: border-box;
+    outline: none;
+    transition: .4s;
+}
+.nfInput.nfInputOversize .nfTextField {
+    height: 60px;
+}
+/* .nfTextField.error {
+    border-color: #b92d2b;
+} */
+
+.nfInput .placeLabel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    color: #8c8c8c;
+    padding: 10px;
+    transition: .2s ease;
+}
+.nfTextField:focus ~ .placeLabel,
+.nfTextField:valid ~ .placeLabel
+{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    font-size: 13px;
+    font-weight: 700;
+}
+.nfInput .inputError {
+    color: #b92d2b;
+    font-size: 13px;
+    display: none;
+}
+.nfFormSpace input[type=checkbox]
+{
+    display: block; position: absolute;
+}
+input[type=checkbox]+label
+{
+    position: relative;
+    display: block;
+    line-height: 1.2;
+    padding: 6px 0;
+    left: 40px;
+}

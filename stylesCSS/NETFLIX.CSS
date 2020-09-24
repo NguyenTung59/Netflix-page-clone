@@ -1,0 +1,895 @@
+/* @import url("https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"); */
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #f3f3f3;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #f3f3f3;
+}
+.container {
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+}
+.our-store-container {
+    padding: 0;
+}
+.our-store-cards {
+    max-width: 1820px;
+    margin: 0 auto;
+}
+.our-store-container .our-store-card {
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 0;
+    margin: 0 auto;
+    border-bottom: 8px solid #333;
+    color: #fff;
+    height: auto;
+    max-height: none;
+    padding: 70px 45px;
+}
+.our-store-card {
+    max-height: 585px;
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px) {
+    .our-store-header-wrap {
+        height: 4rem;
+    }
+}
+.our-store-header-wrap {
+    position: relative;
+    max-width: 1920px;
+    padding-top: 20px;
+    z-index: 10;
+    height: 5rem;
+}
+.our-store-header {
+    position: relative;
+    margin: 0 3.5rem 0 3.5rem;
+    height: 100%;
+}
+.screen-reader-img {
+    position: absolute;
+    height: 45px;
+    width: 167px;
+}
+.screen-reader-img img {
+    height: 100%;
+    padding-top: .5rem;
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px)
+{
+    .our-store-container .our-store-card {
+        padding: 70px 45px;
+    }
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (max-width: 949px) and (min-width: 550px)
+ {
+    .screen-reader-img {
+        height: 36px;
+        width: 134px;
+    }
+}
+.sign-in-btn.redButton {
+    border: 1px solid #e50914;
+    background-color: #e50914;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: .5rem;
+    float: right;
+    text-decoration: none;
+}
+.sign-in-btn {
+    color: #fff;
+    border-radius: 3px;
+}
+.redButton {
+    cursor: pointer;
+}
+.redButton:hover {
+    color: #fff;
+    background-color: hsl(0, 100%, 50%); 
+}
+
+.our-store-container .our-store-card.hero-card .our-store-card-text {
+    position: relative;
+    max-width: 640px;
+    text-align: center;
+    max-height: none;
+    width: 100%;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+    z-index: 1;
+}
+.our-store-container .our-store-card .our-store-card-background {
+    position: absolute;
+    top: -75px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    overflow: hidden;
+    /* background-image: url("image/netflix.jpg");
+    background-size: cover;
+    background-blend-mode: multiply; */
+}
+.our-store-container .our-store-card .our-store-card-background .concord-img-wrapper {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.our-store-container .our-store-card.hero-card .our-store-card-background .concord-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transform: scale(1.25)
+            translateY(-10%); */
+}
+.our-store-container .our-store-card.hero-card .concord-img {
+    transform: none;
+}
+.our-store-container .our-store-card .our-store-card-background .concord-img-gradient {
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image:
+     linear-gradient(to top,
+     rgba(0,0,0,.8) 0,
+    rgba(0,0,0,0) 60%,
+    rgba(0,0,0,.8) 100%);
+} 
+.our-store-card .our-store-card-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0 0 8px;
+}
+.our-store-card.hero-card .our-store-card-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0 0 8px;
+}
+.our-store-container .our-store-card.hero-card .our-store-card-title {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .7);
+}
+@media only screen and (max-width: 1449px) and (min-width: 951px), only screen and (min-width: 1449px)
+{
+    .our-store-container .our-store-card.hero-card .our-store-card-title {
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px) {
+.our-store-container .our-store-card.hero-card .our-store-card-subtitle {
+    margin-bottom: 2.5rem;
+    }
+}
+.cta-form {
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.cta-form-small {
+    text-align: left;
+}
+.our-store-container .btn.btn-our-store-cta .logo-icon {
+    position: absolute;
+    top:40%;
+    color: #fff;
+    transition: .5s;
+    height: .5rem;
+    width: .5rem;
+    box-shadow: -1.8px 1.8px 0 rgba(255, 255, 255, .9);
+    right: 10%;
+    transform: rotate(225deg);
+}
+@media only screen and (max-width: 1449px) and (min-width:950px), only screen and (min-width:1450px)
+{
+    .our-store-container .btn.btn-our-store-cta .logo-icon {
+        height: 1rem;
+        width: 1rem;
+        top: 33%;
+        right: 8%;
+    }
+}
+.cta-link-wrapper .btn.btn-our-store-cta.btn-red {
+    font-weight: 400;
+    font-size: 1.875rem;
+}
+.our-store-container .btn.btn-our-store-cta .logo-icon img  {
+    height: 1rem;
+    color: #fff;
+    
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (max-width: 949px) and (min-width: 550px) {
+    .our-store-container .btn.btn-our-store-cta .logo-icon {
+        height: .8rem;
+        width: .8rem;
+    }
+}
+.btn {
+    position: relative;
+    font-size: 1em;
+    padding: .35rem 2em .35rem 1em;
+    min-width: 74px;
+    min-height: 50px;
+    margin: .5em auto;
+    display: inline-block;
+    line-height: 1em;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #e50914;
+    color: #fff;
+}
+.btn.btn-large {
+    min-height: 60px;
+    min-width: 112px;
+}
+.btn-red:hover {
+    background-color: hsl(0, 100%, 50%);
+    }
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (max-width: 949px) and (min-width: 550px){
+    .btn-red:hover {
+        background-color: hsl(0, 100%, 50%);
+        }
+    }
+.btn-red {
+    color: #fff;
+    background-color: #e50914;
+    /* background-image: linear-gradient(to bottom,#e50914,#db0510); */
+    box-shadow: 0 1px 0 rgba(0,0,0,.45);
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (max-width: 949px) and (min-width: 550px) {
+    .our-store-container .btn-our-store-cta {
+    margin: .5em auto;
+    display: inline-block;
+    width: auto;
+    font-size: 1.625rem;
+    line-height: initial;
+    padding-right: 3.25rem;
+    padding-left: 1.6125rem;
+    }
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (max-width: 949px) and (min-width: 550px) {
+    .our-store-cta-container .btn.btn-our-store-cta {
+    margin: .5em auto;
+    display: inline-block;
+    width: auto;
+    font-size: 1.625rem;
+    min-height: 60px;
+    line-height: initial;
+    }
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (max-width: 949px) and (min-width: 550px) {
+    .our-store-cta-container .btn.btn-large {
+        padding-right: 3.25rem;
+        padding-left: 1.625rem;
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 550px){
+    .cta-form{
+        font-size: 1.5rem;
+        min-height: 44px;
+    }
+}
+.cta-form-small .btn-small {
+    height: auto;
+    min-height: 48px;
+    margin: 10px 0;
+    font-size: 1.25rem;
+    padding-right: 2.5rem;
+    padding-left: 1.2rem
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px) {
+    .our-store-container .our-store-card.free-trial-card .our-store-trial-widget {
+        margin-bottom: 3rem;
+    }
+}
+.free-trial-card {
+    padding: 70px 45px;
+}
+.our-store-container .our-store-card.free-trial-card .our-store-card-title {
+    font-size: 3.125rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+.our-store-trial-widget {
+    margin: 32px auto;
+}
+.timeline-labels {
+    position: relative;
+    display: flex;
+}
+.free-trial-text {
+    position: absolute;
+    width: 38%;
+    font-weight: 600;
+    text-align: left;
+    color: #00d65f;
+    left: 0;
+    bottom: 0;
+}
+.billing-text {
+    display: block;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    color: #8c8c8c;
+}
+.bill-label {
+    display: inline-block;
+    margin: 0;
+}
+.bill-date {
+    color: #fff;
+    display: block;
+    white-space: nowrap;
+}
+.our-store-container .our-store-card.free-trial-card .second-bill-date {
+    position: absolute;
+    left: 85%;
+    width: 5%;
+    font-weight: 600;
+    right: 0;
+    bottom: 0;
+}
+
+.our-store-container .our-store-card.free-trial-card .timeline-bar {
+    position: relative;
+    margin: 10px 2px 25px;
+    background: linear-gradient(to right,#00d65f 10%,#308234 50%,#3f3f3f 50%,#3f3f3f 85%,rgba(63,63,63,0) 100%);
+    width: 100%;
+    height: 1.5em;
+    border-radius: .75em 0 0 .75em;
+    margin: .5em .1em 1.25em;
+}
+.our-store-container .our-store-card.free-trial-card .timeline-bar::before {
+    content: '';
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background: #fff;
+    border-radius: .75em;
+    left: 48%;
+}
+.our-store-container .our-store-card.free-trial-card .timeline-bar .timeline::before {
+    margin: 0 auto;
+}
+.our-store-container .our-store-card.free-trial-card .timeline-bar::after {
+    content: '';
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background: #fff;
+    border-radius: .75em;
+    left: 85%;
+}
+.our-store-container .our-store-card.free-trial-card .reminder-label {
+    text-align: left;
+    position: relative;
+    left: 50%;
+    width: 50%;
+    margin-left: -2.5em;
+    text-align: left;
+}
+.our-store-container .our-store-card.free-trial-card .our-store-card-text {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.our-store-container .our-store-card.free-trial-card .reminder-label::after {
+    position: absolute;
+    left: .6em;
+    height: 2.5em;
+    width: 2px;
+    background: #d8d8d8;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    content: '';
+    top: -2.75em;
+}
+.icon-envelope {
+    margin-right: .5em;
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px) {
+    .our-store-container .our-store-card.free-trial-card .reminder-label::after {
+        left: .5em;
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 550px) {
+    .our-store-container .our-store-card.free-trial-card .reminder-label::after {
+        left: .4em;
+    }
+}
+.our-store-container .our-store-card.free-trial-card .our-store-card-message {
+    max-width: 750px;
+    margin: 1rem auto;
+    text-align: center;
+}
+.animation-card {
+    display: flex;
+    padding: 70px 45px;
+}
+.our-store-container .our-store-card.animation-card .our-store-card-text {
+    width: 52%;
+    height: 100%;
+    flex: 0 1 auto;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+    text-align: left;
+}
+.cta-form-wrapper .cta-form {
+    text-align: left;
+}
+.btn-tv {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.our-store-container .our-store-card.animation-card .animation-card-container {
+    z-index: 3;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.our-store-card-subtitle {
+    color: #fff;
+    font-size: 26px;
+    margin: 16px 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.our-store-container .our-store-card.watchOnTv .our-store-card-animation-container {
+    margin: -10% -5% -5% 0;
+}
+.our-store-container .our-store-card.animation-card .our-store-card-animation-container {
+    position: relative;
+}
+.our-store-container .our-store-card.animation-card.watchOnTv .our-store-card-animation {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    max-width: 73%;
+    max-height: 54%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.our-store-container .our-store-card.animation-card.watchOnTv .our-store-card-img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+}
+.our-store-card-animation .our-story-card-video {
+    width: 100%;
+    height: 100%;
+}
+.downloadAndWatch .animation-card-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* downloadAndWatch */
+
+.our-store-container .our-store-card.animation-card .our-store-card-img-container {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px) {
+    .our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-img-container {
+        width: 100%;
+        max-width: 600px;
+        margin-top: 1em;
+    }
+}
+/* .our-store-container .our-store-card-subtitle {
+    font-size: 1.625rem;
+    font-weight: 400;
+} */
+
+.our-store-container .our-store-card.animation-card.downloadAndWatch .animation-card-container .our-store-card-text {
+    padding: 0 0 0 3rem;
+}
+.our-store-container .our-store-card.downloadAndWatch .our-store-card-animation-container {
+    margin: -8% 0 -4% -15%;
+    min-height: 100px;
+    width: 100%;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px) {
+    .our-store-container .our-store-card.downloadAndWatch .our-store-card-animation-container {
+        margin: -8% 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px) {
+    .our-store-container .our-store-card.animation-card.downloadAndWatch .animation-card-container .our-store-card-text {
+        padding: 0;
+    }
+}
+.our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation {
+    display: flex;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 8%;
+    margin: 0 auto;
+    align-items: center;
+    width: 60%;
+    min-width: 15em;
+    background: #000;
+    border: 2px solid rgba(255,255,255,.25);
+    border-radius: .75em;
+    padding: .5em .75em;
+    box-shadow: 0 0 2em 0 #000;
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px) {
+    .our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation {
+    padding: .5em .75em;
+    bottom: 12%;
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 500px) {
+    .our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation {
+    padding: .35em .75em;
+    bottom: 8%;
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 500px) {
+    .our-store-container .our-store-card.animation-card .cta-form {
+        display: none;
+    }
+}
+.our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation .our-store-card-animation-img {
+    margin: 0 1em 0 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px){
+    .our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation .our-store-card-animation-img img {
+        height: 5em;
+    }
+}
+.our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation .our-store-card-animation-img img {
+    height: 4.5em;
+}
+.our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation .our-store-card-animation-text {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: .3em 0;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px){
+    .our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation .our-store-card-animation-text .text-0 {
+        font-size: 1.1em;
+    }
+}
+.our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation .our-store-card-animation-text .text-0 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: left;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px){
+    .our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation .our-store-card-animation-text .text-1 {
+        font-size: 1em;
+    }
+}
+.our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation .our-store-card-animation-text .text-1 {
+    color: #0071eb;
+    font-size: .8em;
+    font-weight: 400;
+    text-align: left;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px) {
+.our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation:after {
+    height: 3.75em;
+    }
+}
+.our-store-container .our-store-card.animation-card.downloadAndWatch .our-store-card-animation:after {
+    width: 3em;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    background-size: 100%;
+    content: '';
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+/* Watch on Device */
+.our-store-container .our-store-card.animation-card.watchOnDevice .our-store-card-animation {
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+.our-store-container .our-store-card.animation-card.watchOnDevice .our-store-card-img {
+    position: relative;
+    z-index: 2;
+}
+
+.our-store-container .our-store-card-subtitle, .our-store-container .our-store-card-text {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px) {
+    .our-store-container .our-store-card-text {
+        font-size: 1.625rem;
+    }
+}
+.our-store-container .our-store-card.faq-card .our-store-card-title {
+    text-align: center;
+}
+.our-store-container .our-store-card.faq-card .cta-form {
+    text-align: center;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+    .our-store-container .our-store-card.animation-card .animation-card-container {
+        
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+    .our-store-container .our-store-card.animation-card .our-store-card-text {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        }
+    }
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width:350px), only screen and (max-width: 349px) {
+    .our-store-container .our-store-card.animation-card.watchOnTv .our-store-card-text {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width:350px), only screen and (max-width: 349px) {
+    .our-store-container .our-store-card.animation-card .our-store-card-img-container {
+        width: 100%; 
+        max-width: 600px;
+        margin-top: 1em;
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px) {
+    .our-store-container .our-store-card.animation-card .cta-form-wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px){
+    .our-store-container .our-store-card .our-store-card-background {
+    top: -100px;
+    }
+}
+
+.our-store-container .our-store-card.faq-card .svg-icon-thin-x {
+    position: absolute;
+    transform: rotate(45deg);
+    height: 1em;
+    width: 1em;
+    right: 1em;
+    top: 1em;
+    cursor: pointer;
+}
+.our-store-container .our-store-card.faq-card .faq-list-item {
+    list-style-type: none;
+    margin: 0 0 8px 0;
+}
+.our-store-container .our-store-card.faq-card .faq-question {
+    padding: .8em 2.2em .8em 1.2em;
+    margin-bottom: 1px;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    border: 0;
+    font-size: 1.625rem;
+
+}
+.our-store-container .our-store-card.faq-card .faq-answer, .our-store-container .our-store-card.faq-card .faq-question {
+    text-align: left;
+    background: #303030;
+    color: #fff;
+    display: block;
+}
+@media  only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px) {
+.our-store-container .our-store-card.faq-card .faq-list {
+    width: 75%;
+    margin: 2em auto;
+    }
+}
+
+.our-store-container .our-store-card.faq-card .faq-list {
+    margin: 1.25em auto;
+    max-width: 815px;
+    padding: 0;
+}
+.our-store-container .our-store-card.faq-card {
+    text-align: center;
+}
+.our-store-container .our-store-card.faq-card .faq-answer span {
+    display: inline-block;
+    padding: 1.2em;
+}
+
+.site-footer-wrapper {
+    min-width: 190px;
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 1em;
+    color: #a6a6a6;
+    position: relative;
+}
+.site-footer {
+    margin: 0 auto;
+    width: 90%;
+}
+.footer-top {
+    padding: 0;
+    margin: 0 0 30px;
+    text-align: left;
+}
+.footer-top-a {
+    color: #a6a6a6;
+    text-align: left;
+}
+.footer-link-item {
+    box-sizing: border-box;
+    width: 24%;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    padding-right: 12px;
+    vertical-align: top;
+    text-align: left;
+}
+.footer-links {
+    max-width: 1000px;
+    font-size: 13px;
+}
+.footer-link {
+    color: #a6a6a6;
+}
+
+.structural {
+    margin: 0;
+    padding: 0;
+}
+ul .structural li {
+    list-style: none;
+    margin-left: 0;
+}
+.our-store-container .our-store-card.card-contents .site-footer a {
+    text-decoration: none;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px) {
+    .structural li {
+    list-style: none;
+    margin-left: 0;
+    }
+}
+.our-store-container .our-store-card.card-contents a:hover {
+    text-decoration: underline;
+}
+
+/* Active button  */
+     .btn-our-store-cta {
+    position: relative;
+    transition-duration: 0.5s;
+    outline: none;
+}
+.btn-our-store-cta::after {
+    content: "";
+    background: linear-gradient(to right,#db0510 10%, #eeaadd 70%, #00defa 100%);
+    display: block;
+    position: absolute;
+    border-radius: 2px;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: all 8.8s ease;
+}
+.btn-our-store-cta:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    z-index: 0;
+    display: block;
+    transition: 0s;
+}
+
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px)
+{
+    .btn-our-store-cta.btn-large {
+        padding-right: 3.25rem;
+        padding-left: 1.6125rem;
+    }
+}
+ /* check mobile */
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+    .cta-link-wrapper .btn.btn-our-store-cta.btn-red, .btn.btn-large {
+        font-size: 1rem;
+        min-height: 40px;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+    .our-store-container .our-store-card-subtitle {
+        font-size: 1.125rem;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+    .our-store-card.hero-card .our-store-card-title, .our-store-card .our-store-card-title, .our-store-container .our-store-card.free-trial-card .our-store-card-title {
+        font-size: 1.75rem;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+    .our-store-header-wrap {
+        padding-top: 0;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+    .our-store-header {
+        padding-top: 20px;
+        margin: 0 5%;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+    .screen-reader-img img {
+        padding-top: 0;
+        height: 24px;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+    .sign-in-btn.redButton {
+        margin-top: 0;
+        font-size: .7rem;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+    .cta-form-small .btn-small {
+        display: none;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px) {
+.our-store-container .our-store-card.downloadAndWatch .our-store-card-animation-container {
+    margin: 0;
+    }
+}

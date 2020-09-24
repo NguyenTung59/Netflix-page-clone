@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Netflix | Create Account</title>
+
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="stylesCSS/nf-registration.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+
+    <body>
+        <div id="appMountPoint">
+            <div class="basicLayout modernInApp signupSimplicity-registration simplicity" lang="en-VN">
+                <div class="nfHeader noBorderHeader signupBasicHeader">
+                    <a class="nfLogo signupBasicHeader" href="netflix.html"><img src="image/Netflix_2015_logo.svg" width="145px" height="45px"></a>
+                    <a class="authLinks signupBasicHeader" href="SignIn-netflix.html">Sign In</a>
+                </div>
+                <div class="freeTrialMessaging notification">
+                    <div class="content">
+                        <span>
+                            Enjoy your first month.
+                            <strong>It's free.</strong>
+                        </span>
+                    </div>
+                </div>
+                <div class="simpleContainer">
+                    <div class="centerContainer " style="display: block; transform: none; opacity: 1;transition-duration: 250ms;">
+                        <form method="POST">
+                        <div class="regContainer regFormContainer">
+                            <div class="stepHeader-container">
+                                <div class="stepHeader">
+                                    <span class="stepIndicator">STEP <b>2</b> OF <b>3</b></span>
+                                    <h1 class="stepTitle">Sign up to start your free month</h1>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="contextRow">Just two more steps and you're done!</div>
+                                <div class="contextRow">We hate paperwork, too.</div>
+                                <div class="regFormTitle">Create your account.</div>
+                                <ul class="simpleForm structural ui-grid">
+                                    <li class="nfFormSpace">
+                                        <div class="nfInput nfInputOversize">
+                                            <div class="nfInputPlacement">
+                                                <label class="input_id" placeholder="email">
+                                                    <input id="id_email" type="text" class="nfTextField error" maxlength="59" minlength="" name="email" required="">
+                                                    <label for="id_email" class="placeLabel">Email</label>
+                                                </label>
+                                            </div>
+                                            <div class="inputError">Please a valid email address</div>
+                                        </div>
+                                    </li>
+                                    <li class="nfFormSpace">
+                                        <div class="nfInput nfInputOversize">
+                                            <div class="nfInputPlacement">
+                                                <label class="input_id" placeholder="password">
+                                                    <input id="id_email" type="password" class="nfTextField error" maxlength="59" minlength="" name="password" required="">
+                                                    <label for="id_email" class="placeLabel">Password</label>
+                                                </label>
+                                            </div>
+                                            <div class="inputError">Password is required!</div>
+                                        </div>
+                                    </li>
+                                    <li class="nfFormSpace">
+                                        <div>
+                                            <input type="checkbox" id="cb_emailPreference" style="width: 25px; height: 25px;" >
+                                            <label for="cb_emailPreference">Please do not email me Netflix special offers.</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </form>
+                        <div class="submitBtnContainer" style="max-width: 440px;">
+                            <button type="button" class="nf-btn nf-btn-primary btn-nf">CONTINUE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-footer-wrapper footer-center" style="transition-duration: 250ms;opacity: 1;">
+                    <div class="site-footer">
+                        <p class="footer-top"><a class="footer-top-a" href="#">Questions? Contact us.</a></p>
+                        <ul class="footer-links structural">
+                            <li class="footer-link-item" placeholder="">
+                                <a class="footer-link" href="#"><span>FAQ</span></a>
+                            </li>
+                            <li class="footer-link-item" placeholder="">
+                                <a class="footer-link" href="#"><span>Help Center</span></a>
+                            </li>
+                            <li class="footer-link-item" placeholder="">
+                                <a class="footer-link" href="#"><span>Terms of Use</span></a>
+                            </li>
+                            <li class="footer-link-item" placeholder="">
+                                    <a class="footer-link" href="#"><span>Privacy</span></a>
+                            </li>
+                            <li class="footer-link-item" placeholder="">
+                                <a class="footer-link" href="#"><span>Cookie Preferences</span></a>
+                            </li>
+                            <li class="footer-link-item" placeholder="">
+                                <a class="footer-link" href="#"><span>Corporate Information</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

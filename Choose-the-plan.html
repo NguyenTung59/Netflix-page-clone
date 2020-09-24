@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Netflix | planform</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="stylesCSS/Sign-nf.css"/>
+        <link rel="stylesheet" href="stylesCSS/Netflix-30day.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="stylesCSS/NETFLIX.CSS">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+
+    <body>
+        <div id="appMountPoint">
+            <div class="basicLayout modernInApp signup-planSelectWithContext" lang="en-VN">
+                <div class="nfHeader noBorderHeader signupBasicHeader">
+                    <a class="nfLogo signupBasicHeader" href="netflix.html"><img src="image/Netflix_2015_logo.svg" width="145px" height="45px"></a>
+                    <a class="authLinks signupBasicHeader" href="SignIn-netflix.html">Sign In</a>
+                </div>
+                <div class="simpleContainer">
+                    <div class="centerContainer narrowCenterContainer" style="display: block; opacity: 1; transition-duration: 250ms">
+                        <div class="planFormContainer">
+                            <div>
+                                <div class="stepHeader-container">
+                                    <div class="stepHeader">
+                                        <span class="stepIndicator">STEP <b>1</b> OF <b>3</b></span>
+                                        <h1 class="stepTitle">Choose the plan that right's for you.</h1>
+                                    </div>
+                                </div>
+                                <div class="changeAnytime">
+                                    Downgrade or upgarade at any time
+                                </div>
+                            </div>
+                            <div class="planGrid .planGrid--hasFixedHeader planGrid--has3Plans">
+                                <div class="planGrid_header">
+                                    <div class="planGrid_selector planGrid_planSelector">
+                                        <label class="plaGrid_selectorChoice planGrid_planChoice">
+                                            <input class="planGrid_selectorInput planGrid_planInput">
+                                            <span class="planGrid_planLabel planGrid_selectorLabel">Basic</span>
+                                        </label>
+                                        <label class="plaGrid_selectorChoice planGrid_planChoice">
+                                            <input class="planGrid_selectorInput planGrid_planInput">
+                                            <span class="planGrid_planLabel planGrid_selectorLabel">Standrard</span>
+                                        </label>
+                                        <label class="plaGrid_selectorChoice planGrid_planChoice">
+                                            <input class="planGrid_selectorInput planGrid_planInput">
+                                            <span class="planGrid_planLabel planGrid_selectorLabel">Premium</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <table class="planGrid_featureTable" role="table">
+                                    <caption class="planGrid_featureTableCaption">Netflix Plan Features</caption>
+                                    <tbody class="plan-grid-feature-table-body">
+                                        <tr role="row" class="planGrid_featureTableRow">
+                                            <td class="planGrid_cell planGrid_featureCell">Monthly price after free month ends on 8/24/19</td>
+                                            <td class="planGrid_cell planGrid_stringCell">VND180,000</td>
+                                            <td class="planGrid_cell planGrid_stringCell">VND220,000</td>
+                                            <td class="planGrid_cell planGrid_cell--isSelected planGrid_stringCell">VND260,000</td>
+                                        </tr>
+                                        <tr role="row" class="planGrid_featureTableRow">
+                                            <td class="planGrid_cell planGrid_featureCell">HD avaiable</td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">no</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M10.5 9.3L1.8.5.5 1.8l8.8 8.7-8.8 8.8 1.3 1.2 8.7-8.7 8.8 8.7 1.2-1.2-8.7-8.8 8.7-8.7L19.3.5l-8.8 8.8z"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="planGrid_featureTableRow">
+                                            <td class="planGrid_cell planGrid_featureCell">Ultra HD avaiable</td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">no</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M10.5 9.3L1.8.5.5 1.8l8.8 8.7-8.8 8.8 1.3 1.2 8.7-8.7 8.8 8.7 1.2-1.2-8.7-8.8 8.7-8.7L19.3.5l-8.8 8.8z"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">no</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M10.5 9.3L1.8.5.5 1.8l8.8 8.7-8.8 8.8 1.3 1.2 8.7-8.7 8.8 8.7 1.2-1.2-8.7-8.8 8.7-8.7L19.3.5l-8.8 8.8z"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                            </span>
+                                        </tr>
+                                        <tr role="row" class="planGrid_featureTableRow">
+                                            <td class="planGrid_cell planGrid_featureCell">Screens you can watch on at the same time</td>
+                                            <td class="planGrid_cell planGrid_stringCell">1</td>
+                                            <td class="planGrid_cell planGrid_stringCell">2</td>
+                                            <td class="planGrid_cell planGrid_stringCell">4</td>
+                                        </tr>
+                                        <tr role="row" class="planGrid_featureTableRow">
+                                            <td class="planGrid_cell planGrid_featureCell">Watch on your laptop, TV, phone and tablet</td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                                <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="planGrid_featureTableRow">
+                                            <td class="planGrid_cell planGrid_featureCell">Unlimited moves and TB shows</td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="planGrid_featureTableRow">
+                                            <td class="planGrid_cell planGrid_featureCell">Cancel anytime</td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="planGrid_featureTableRow">
+                                            <td class="planGrid_cell planGrid_featureCell">First month free</td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                            <td class="planGrid_cell planGrid_booleanCell">
+                                                <span class="planGrid_booleanLabel">yes</span>
+                                                <span class="planGrid_booleanIcon">
+                                                    <svg id="thin-x" viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid_booleanGraphic">
+                                                        <path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <small class="planGrid_legal">
+                                    <span>
+                                        HD and Ultra HD available subject to your Internet service capabilities. Not all content available in HD or Ultra HD. See 
+                                        <a href="#" target="_blank">Terms of Use</a>
+                                        for more details.
+                                    </span>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="submitBtnContainer">
+                            <button type="button" class="nf-btn nf-btn-primary btn-nf">continue</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-footer-wrapper footer-center">
+                    <div class="site-footer">
+                        <p class="footer-top"><a class="footer-top-a" href="#">Questions? Contact us.</a></p>
+                        <ul class="footer-links structural">
+                            <li class="footer-link-item" placeholder="">
+                                <a class="footer-link" href="#"><span>FAQ</span></a>
+                            </li>
+                            <li class="footer-link-item" placeholder="">
+                                <a class="footer-link" href="#"><span>Help Center</span></a>
+                            </li>
+                            <li class="footer-link-item" placeholder="">
+                                <a class="footer-link" href="#"><span>Terms of Use</span></a>
+                            </li>
+                            <li class="footer-link-item" placeholder="">
+                                    <a class="footer-link" href="#"><span>Privacy</span></a>
+                            </li>
+                            <li class="footer-link-item" placeholder="">
+                                <a class="footer-link" href="#"><span>Cookie Preferences</span></a>
+                            </li>
+                            <li class="footer-link-item" placeholder="">
+                                <a class="footer-link" href="#"><span>Corporate Information</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
