@@ -2,19 +2,18 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="origin-trial" data-feature="EME Extension - Policy Check" data-expires="2018-11-26" content="Aob+++752GiUzm1RNSIkM9TINnQDxTlxz02v8hFJK/uGO2hmXnJqH8c/ZpI05b2nLsHDhGO3Ce2zXJUFQmO7jA4AAAB1eyJvcmlnaW4iOiJodHRwczovL25ldGZsaXguY29tOjQ0MyIsImZlYXR1cmUiOiJFbmNyeXB0ZWRNZWRpYUhkY3BQb2xpY3lDaGVjayIsImV4cGlyeSI6MTU0MzI0MzQyNCwiaXNTdWJkb21haW4iOnRydWV9">
-    <title>Netflix Vietnam | Sign In</title>
-    <meta name="viewport" content="width=width-width, initial-scale=1.0">
-    <!---->
+    <title>Netflix | Sign in Free 30 days</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- <link rel="stylesheet" href="Sign-nf.css" /> -->
+    <!-- <link rel="stylesheet" href="Sign-nf.css" />
+    <link rel="stylesheet" href="Netflix-30day.css"> -->
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <style>
         @import url("");
@@ -71,10 +70,6 @@
             margin-top: 20px;
             height: 36px;
             width: 134px;
-        }
-        
-        .nfHeader.signupBasicHeader {
-            height: 90px;
         }
         
         @media only screen and (max-width: 740px) {
@@ -209,7 +204,6 @@
             padding: 16px 20px 0;
             color: #fff;
             background: #333;
-            outline: none;
         }
         
         .nfInput .nfTextField {
@@ -317,9 +311,8 @@
         }
         
         .hybird-login-form .nfPasswordControls .nfPasswordToggle {
-            padding: 0 24px;
+            padding: 0 12px;
             height: 50px;
-            outline: none;
         }
         
         .nf_hide {
@@ -463,6 +456,7 @@
             left: 0;
             padding: 0;
             border: 1px solid #b3b3b3;
+            background-color: #fff;
             /* box-shadow: 0 0 5px 2px rgba(150, 200, 255,.6); */
         }
         
@@ -473,12 +467,9 @@
             top: 2px;
             height: 16px;
             width: 16px;
-            background: #737373;
+            background: #fff;
             border-radius: 2px;
             content: '';
-            background-image: url("https://raw.githubusercontent.com/NguyenTung59/ProjectOfTung/master/check-box.png");
-            background-blend-mode: multiply;
-            background-size: cover;
         }
         
         .hybird-login-form .login-remember-me input[type=checkbox]:checked+label::after>i {
@@ -488,8 +479,6 @@
         .ui-binary-input input[type=checkbox]:checked+label::after {
             color: #0080ff;
             content: "";
-            height: 15px;
-            width: 15px;
             font-size: 28px;
             top: -2px;
             left: 0;
@@ -677,7 +666,7 @@
             top: 10px;
         }
         
-        .ui-select-wrapper .prefix::after {
+        .ui-select-wrapper::after {
             color: #999;
             font-size: 6px;
             position: absolute;
@@ -711,7 +700,6 @@
             color: #999999;
             border-radius: 3px;
             padding-left: 50px;
-            /* position: relative; */
         }
         
         select {
@@ -720,21 +708,552 @@
             -webkit-appearance: button;
         }
         
-        @media only screen and (max-width: 740px) {
-            #appMountPoint {
-                background-color: transparent;
-                color: #fff;
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nfHeader {
+            align-items: center;
+        }
+        
+        .noBorderHeader {
+            border-bottom: 1px solid #e6e6e6;
+        }
+        
+        .nfLogo.signupBasicHeader {
+            margin-left: 3%;
+            height: 100%;
+            display: inline-block;
+            line-height: 90px;
+        }
+        
+        .nfLogo img {
+            margin-top: 0;
+            width: 168px;
+            height: 45px;
+        }
+        
+        .authLinks.signupBasicHeader {
+            margin: 0 3%;
+        }
+        
+        a:hover {
+            color: #333;
+        }
+        /* a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+} */
+        
+        .authLinks {
+            float: right;
+            font-size: 19px;
+            color: #333;
+            font-weight: 700;
+            line-height: 90px;
+            text-decoration: none;
+        }
+        /* a:not([href]):not([tabindex]):hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #333;
+}
+.noBorderHeader a:hover {
+    color: #333;
+} */
+        
+        #appMountPoint .simpleContainer {
+            padding-bottom: 95px;
+        }
+        
+        .simpleContainer {
+            width: 100%;
+            flex-grow: 1;
+        }
+        
+        .basicLayout .centerContainer {
+            padding: 20px 32px 60px;
+        }
+        
+        .centerContainer {
+            display: none;
+            overflow: hidden;
+        }
+        
+        .centerContainer {
+            margin: 0 auto 15px;
+            max-width: 978px;
+            box-sizing: border-box;
+        }
+        
+        .centerContainer.firstLoad {
+            display: block;
+        }
+        
+        div.basicLayout .planContainer {
+            max-width: 340px;
+        }
+        
+        .planContainer {
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        div.basicLayout .stepLogoContainer {
+            display: inline-block;
+            height: 170px;
+            width: 50px;
+        }
+        
+        .planContainer .stepLogo {
+            margin: 100px 0 20px;
+        }
+        
+        .stepLogo {
+            height: 50px;
+            width: 50px;
+        }
+        
+        .planStepLogo {
+            background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Checkmark.png');
+            width: 50px;
+            height: 50px;
+            display: block;
+            background-size: 50px;
+        }
+        /* .stepHeader-container {
+    width: 100%;
+    color: #333;
+} */
+        
+        .stepHeader {
+            display: inline-block;
+        }
+        
+        .stepIndicator {
+            font-size: 13px;
+            display: block;
+            line-height: 19px;
+        }
+        
+        .stepTitle {
+            font-size: 23px;
+            font-weight: 700;
+            display: inline-block;
+            color: #000;
+        }
+        
+        h1 {
+            margin: 0 0 .4em;
+        }
+        
+        .planContainer .contextRow {
+            max-width: 300px;
+            display: inline-block;
+        }
+        
+        .contextBody {
+            margin: 0;
+            font-size: 17px;
+        }
+        
+        .checkedList {
+            text-align: left;
+            padding: 0;
+        }
+        
+        ul {
+            margin: 15px 0 0 0;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        .checkedList .bullet {
+            padding: 0 0 1em 2em;
+            position: relative;
+            list-style-type: none;
+            margin-left: 0;
+        }
+        
+        .checkedList .bullet::before {
+            content: '';
+            display: block;
+            width: .8em;
+            height: .3em;
+            border-bottom: 1px solid #e50419;
+            border-left: 1px solid #e50419;
+            position: absolute;
+            transform: rotate(-45deg);
+            top: .3em;
+            left: .2em;
+        }
+        
+        .submitBtnContainer {
+            max-width: 440px;
+        }
+        
+        div.basicLayout .contextStep .submitBtnContainer {
+            max-width: 340px;
+        }
+        
+        .submitBtnContainer {
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .simpleContainer .submitBtnContainer {
+            margin-top: 24px;
+        }
+        
+        div.basicLayout .narrowCenterContainer .submitBtnContainer {
+            padding: 0 16px;
+        }
+        
+        .nf-btn {
+            width: 100%;
+            border: none;
+            position: relative;
+            padding: 12px 25px;
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 2px;
+            letter-spacing: .025rem;
+        }
+        
+        .nf-btn-primary {
+            color: #fff;
+            font-size: 17px;
+            background-color: #e50419;
+            font-weight: 400;
+            min-height: 48px;
+        }
+        
+        .nf-btn-primary:hover {
+            background: hsl(0, 100%, 50%);
+        }
+        
+        .site-footer-wrapper {
+            opacity: 1;
+            margin-top: 0;
+            background-color: #f3f3f3;
+        }
+        
+        .footer-top a {
+            color: #a6a6a6;
+        }
+        
+        .footer-link-item {
+            width: 24%;
+        }
+        /* choose the plan */
+        
+        div.basicLayout .nfHeader {
+            background: #fff;
+        }
+        
+        div.basicLayout .simpleContainer {
+            background: #fff;
+        }
+        
+        div.basicLayout .narrowCenterContainer {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        
+        div.basicLayout .planFormContainer .stepHeader-container {
+            padding: 0 16px;
+        }
+        
+        div.basicLayout .planFormContainer .changeAnytime {
+            padding: 0 16px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .planFormContainer {
+            max-width: 1024px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        /* Plan header */
+        
+        .planGrid_header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .planGrid_planChoice {
+            width: -webkit-calc(100% / 3);
+            width: -moz-calc(100% / 3);
+            width: calc(100% / 3);
+        }
+        
+        .planGrip_selector {
+            display: flex;
+            border: 0;
+            margin: 0;
+            justify-content: center;
+        }
+        
+        .plaGrid_selectorChoice {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            -moz-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        @media only screen and (min-width: 951px),
+        only screen and (max-width: 950px) and (min-width: 601px) {
+            .planGrid_planChoice {
+                padding: 12px 0;
             }
         }
         
-        #appMountPoint {
-            height: 100%;
+        @media only screen and (min-width: 951px),
+        only screen and (max-width: 950px) and (min-width: 601px) {
+            .planGrid_planSelector {
+                -webkit-box-ordinal-group: 2;
+                -webkit-order: 1;
+                -moz-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                order: 1;
+            }
+        }
+        
+        @media only screen and (min-width: 951px),
+        only screen and (max-width: 950px) and (min-width: 601px) {
+            .planGrid_selector {
+                width: 60%;
+            }
+        }
+        
+        .planGrid_selector {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+        
+        .planGrid_planInput {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .planGrid_selectorInput {
+            z-index: -1;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        .planGrid_selectorLabel {
+            display: flex;
+            /* position: relative; */
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .planGrid_planLabel {
+            background: #e50419;
+            color: #fff;
+            margin: 0 auto;
+            padding: 1px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 2px;
+            font-size: 17px;
+            opacity: .6;
+        }
+        
+        .planGrid_planLabel::after {
+            content: '';
+            display: none;
+            border: 10px solid transparent;
+            border-top-color: #e50419;
+            top: 98%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+        
+        .planGrid_planInput:active+.planGrid_planLabel::after,
+        .planGrid_planInput:focus+.planGrid_planLabel::after {
+            display: block;
+        }
+        
+        @media only screen and (max-width: 950px) and (min-width: 601px) {
+            .planGrid_planInput,
+            .planGrid_planLabel {
+                width: 90px;
+                height: 90px;
+            }
+        }
+        
+        @media only screen and (min-width: 950px) {
+            .planGrid_planInput,
+            .planGrid_planLabel {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        
+        .planGrid_planInput:checked+.planGrid_planLabel {
+            opacity: 1;
+        }
+        
+        .planGrid_planInput:active+.planGrid_planLabel,
+        .planGrid_planInput:focus+.planGrid_planLabel {
+            box-shadow: 0 0 3px 0 #e50419;
+            opacity: 1;
+        }
+        /* Table */
+        
+        caption {
+            display: none;
+        }
+        
+        .planGrid_featureTable {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 10px;
+        }
+        
+        @media only screen and (min-width: 951px),
+        only screen and (max-width: 950px) and (min-width: 601px) {
+            .planGrid_featureTableRow {
+                border-bottom: 1px solid #ccc;
+                min-height: 60px;
+            }
+        }
+        
+        .planGrid_cell {
+            color: #a6a6a6;
+            fill: #a6a6a6;
+            box-sizing: border-box;
+            flex: 1 1 auto;
+            text-align: center;
+        }
+        
+        .planGrid_featureTableRow {
+            display: flex;
+            align-items: center;
+        }
+        
+        @media only screen and (min-width: 951px),
+        only screen and (max-width: 950px) and (min-width: 601px) {
+            .planGrid_cell {
+                padding: 12px 16px;
+                width: calc(60% / 3);
+            }
+        }
+        
+        @media only screen and (min-width: 951px),
+        only screen and (max-width: 950px) and (min-width: 601px) {
+            div.basicLayout .planGrid_featureCell {
+                width: 40%;
+                color: #333333;
+            }
+        }
+        
+        @media only screen and (min-width: 951px),
+        only screen and (max-width: 950px) and (min-width: 601px) {
+            div.basicLayout .planGrid_stringCell {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+        }
+        
+        .planGrid_featureCell {
+            color: #333;
+            fill: #333;
+            text-align: left;
+            flex: 0 0 auto;
+        }
+        
+        .planGrid_booleanIcon {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+        }
+        
+        .planGrid_booleanGraphic {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .planGrid_booleanGraphic.svg-icon.svg-icon-thin-x path {
+            transform: translate(-2px, -2px);
+        }
+        
+        .planGrid_booleanCell {
+            position: relative;
+        }
+        
+        .planGrid_booleanLabel {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            width: 18px;
+            height: 18px;
+            font-size: 72px;
+            line-height: 1;
+            opacity: 0;
+        }
+        
+        .planGrid_legal {
+            padding: 0 16px;
+            color: #737373;
+            font-size: 13px;
+            display: block;
+        }
+        
+        tr:nth-child(8) {
+            border-bottom: none;
+        }
+        
+        .site-footer {
+            padding-top: 30px;
+        }
+        
+        .planGrid_planInput:active+.planGrid_cell.planGrid_cell--isSelected,
+        .planGrid_planInput:focus+.planGrid_cell.planGrid_cell--isSelected {
+            color: #e50419;
+            fill: #e50419;
+        }
+        /* .planGrid_cell--isSelected
+        {
+            color: #e50419;
+            fill: #e50419;
+        } */
+        
+        @media only screen and (max-width: 740px) {
+            .nfLogo img {
+                width: 75px;
+                height: 20px;
+            }
         }
         
         @media only screen and (max-width: 740px) {
-            #appMountPoint div {
-                background-color: #000;
-                color: #fff;
+            .nfHeader.signupBasicHeader,
+            .nfLogo.signupBasicHeader,
+            .authLinks {
+                line-height: 50px;
             }
         }
     </style>
@@ -742,128 +1261,66 @@
 
 <body>
     <div id="appMountPoint">
-        <div class="login-wrapper nf-login-wrapper">
-            <div class="login-wrapper-background">
-                <img class="concord-img nf-creative" src="https://assets.nflxext.com/ffe/siteui/vlv3/70731dc8-8977-4ed7-9a0a-421f510aea00/01c25977-b9c5-4bb2-91a7-9bd5428fa4b6/VN-vi-20200914-popsignuptwoweeks-perspective_alpha_website_small.jpg">
+        <div class="basicLayout modernInApp signup-planSelectWithContext" lang="en-VN">
+            <div class="nfHeader noBorderHeader signupBasicHeader">
+                <a class="nfLogo signupBasicHeader" href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"></a>
+                <a class="authLinks signupBasicHeader" href="SignIn-netflix.html">Sign In</a>
             </div>
-            <div class="nfHeader login-header signupBasicHeader">
-                <a class="nfLogo signupBasicHeader" href="netflix.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"></a>
-            </div>
-            <div class="login-body">
-                <div>
-                    <div class="login-content login-form hybird-login-form hybird-login-form-signup">
-                        <div class="hybird-login-form-main">
-                            <h1>Sign In</h1>
-                            <form class="login-form">
-                                <div class="nfInput nfEmailPhoneInput nfEmailPhoneError login-input login-input-email">
-                                    <div class="nfInputPlacement">
-                                        <div class="nfEmailPhoneControls">
-                                            <label class="input_id">
-                                                    <input class="nfTextField error" id="id_userLoginId" type="text" name="userLoginId" required="">
-                                                    <label for="id_userLoginId" class="placeLabel">Email or phone number</label>
-                                            </label>
-                                        </div>
-                                        <div class="inputError">
-                                            Please enter a valid email or phone number.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="nfInput nfPasswordInput nfPasswordError login-input login-input-password">
-                                    <div class="nfInputPlacement">
-                                        <div class="nfPasswordControls">
-                                            <label class="input_id">
-                                                    <input value="" class="nfTextField error" id="id_password" type="password" required="" >
-                                                    <label for="id_password" class="placeLabel">Passwork</label>
-                                            </label>
-                                            <input type="checkbox" id="id_show" class="nfPasswordToggle" onclick="showHide('id_password','id_show');" value="show">
-                                            <!-- <button id="id_password_hide" class="nfPasswordToggle nf_hide" onclick="plsInputPassword">HIDE</button> -->
-                                        </div>
-                                        <div class="inputError">Your passwork must contain between 4 and 60 charaters.</div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-submit btn-small login-button">
-                                        Sign In
-                                    </button>
-                                <div class="hybird-login-form-help">
-                                    <div class="ui-binary-input login-remember-me">
-                                        <input type="checkbox" class="remember-me" name="rememberMe" id="bxid_rememberMe-true" value="true" checked>
-                                        <label for="bxid_rememberMe-true">
-                                                <span class="login-remember-me-label-text">Remember me</span>
-                                            </label>
-                                        <!-- <i class="fas fa-check check-hide"></i> -->
-                                    </div>
-
-                                    <a href="#" class="login-help-link">Need help?</a>
-                                </div>
-                            </form>
+            <div class="simpleContainer">
+                <div class="centerContainer contextStep firstLoad">
+                    <div class="planContainer">
+                        <div class="stepLogoContainer">
+                            <span class="stepLogo planStepLogo">
+                                    <!-- <i class="far fa-check-cricle" style='font-size:48px;color:red'></i> -->
+                                </span>
                         </div>
-                        <div class="hybird-login-form-other">
-                            <form class="login-form">
-                                <div class="facebookForm regOption">
-                                    <div class="fb-minimal">
-                                        <hr>
-                                        <button type="button" class="btn minimal-login btn-with-fb btn-fb">
-                                                <div class="fb-login">
-                                                    <img class="icon-facebook" src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png"></img>
-                                                    <span class="fbBtnText">Login with Facebook</span>
-                                                </div>
-                                            </button>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="login-signup-now">
-                                New to Netflix?
-                                <a class="" traget="_self" href="netflix.html">Sign up now</a>.
+                        <div class="stepHeader-container">
+                            <div class="stepHeader">
+                                <span class="stepIndicator">STEP <b>1</b> OF <b>3</b></span>
+                                <h1 class="stepTitle">Choose your plan.</h1>
                             </div>
                         </div>
+                        <div class="contextBody contextRow">
+                            <ul class="checkedList">
+                                <li class="bullet">You won't be charged until after your free month.</li>
+                                <li class="bullet">We'll remind you three days before your trial ends.</li>
+                                <li class="bullet">No commitments, cancel anytime.</li>
+                            </ul>
+                        </div>
                     </div>
+
+                    <form for="test_form" action="Choose-the-plan.html" class="submitBtnContainer">
+                        <button id="test_form" type="submit" class="nf-btn nf-btn-primary btn-nf">SEE THE PLANS</button>
+                    </form>
                 </div>
             </div>
-            <div class="site-footer-wrapper login-footer">
+            <div class="site-footer-wrapper footer-center">
                 <div class="site-footer">
                     <p class="footer-top"><a class="footer-top-a" href="#">Questions? Contact us.</a></p>
                     <ul class="footer-links structural">
                         <li class="footer-link-item" placeholder="">
-                            <a class="footer-link" href="#"><span>Gift Card Terms</span></a>
+                            <a class="footer-link" href="#"><span>FAQ</span></a>
+                        </li>
+                        <li class="footer-link-item" placeholder="">
+                            <a class="footer-link" href="#"><span>Help Center</span></a>
                         </li>
                         <li class="footer-link-item" placeholder="">
                             <a class="footer-link" href="#"><span>Terms of Use</span></a>
                         </li>
                         <li class="footer-link-item" placeholder="">
-                            <a class="footer-link" href="#"><span>Privacy Statement</span></a>
+                            <a class="footer-link" href="#"><span>Privacy</span></a>
+                        </li>
+                        <li class="footer-link-item" placeholder="">
+                            <a class="footer-link" href="#"><span>Cookie Preferences</span></a>
+                        </li>
+                        <li class="footer-link-item" placeholder="">
+                            <a class="footer-link" href="#"><span>Corporate Information</span></a>
                         </li>
                     </ul>
-                    <div class="lang-selection-container" id="lang-switcher">
-                        <div class="ui-select-wrapper">
-                            <label for="undefined-select" class="ui-label no-display">
-                                    <span class="ui-label-text"></span>
-                                </label>
-                            <div class="select-arrow medium prefix globe">
-                                <!--<img class="icon-globe" src="image/wireframe-globe-icon-grey.jpg">-->
-                                <select class="ui-select medium" id="undefined-select"> 
-                                        <option  selected value="English">English</option>
-                                    </select>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        // $(document).ready(function() {
-        //     $("#id_password").click(function() {
-        //         $(".nfPasswordToggle").toggle();
-        //     });
-        // });
-        function showHide(id_password, id_show) {
-            var eid_pwd = document.getElementById(id_password);
-            var eid_shw = document.getElementById(id_show);
-
-            eid_pwd.type = eid_shw.checked ? 'text' : 'password';
-        }
-    </script>
-
 </body>
 
 </html>
